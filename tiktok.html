@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok sign-in</title>
+<style>body{font-family:system-ui,sans-serif;max-width:680px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}</style>
+</head>
+<body>
+<h1>TikTok sign-in</h1>
+<p id="msg">This page receives the TikTok sign-in for FB to YouTube.</p>
+<script>
+  var q = new URLSearchParams(location.search);
+  var msg = document.getElementById("msg");
+  if (q.get("code")) {
+    msg.textContent = "TikTok sign-in approved. Copy the full address of this page " +
+      "from the address bar and paste it into the program.";
+  } else if (q.get("error")) {
+    msg.textContent = "TikTok sign-in was not approved: " + (q.get("error_description") || q.get("error"));
+  }
+</script>
+<p><a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+</body>
+</html>

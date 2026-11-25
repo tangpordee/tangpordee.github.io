@@ -16,7 +16,8 @@
 <ul>
   <li><strong>Facebook:</strong> the videos, titles and post text of the owner's own Facebook Page, read through the Facebook Graph API.</li>
   <li><strong>YouTube:</strong> permission to upload videos to the owner's own YouTube channel (YouTube Data API, scope <code>youtube.upload</code>). The tool does not read, change or delete anything else on the channel or Google account.</li>
-  <li><strong>AI titles:</strong> the post text is sent to the Anthropic Claude API to suggest a video title.</li>
+  <li><strong>TikTok:</strong> the owner's basic TikTok profile information (<code>user.info.basic</code>) and permission to upload videos to the owner's TikTok inbox as drafts (<code>video.upload</code>). The tool does not read, change or delete anything else on the TikTok account.</li>
+  <li><strong>AI titles and captions:</strong> the post text is sent to the Anthropic Claude API to suggest a video title or caption.</li>
 </ul>
 
 <h2>How data is stored</h2>
@@ -33,6 +34,7 @@ including the Limited Use requirements. It also follows the
 
 <h2>Removing access</h2>
 <p>Access can be removed at any time at
-<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (Google)
+and in the TikTok app under Settings and privacy &rarr; Security &rarr; Manage app permissions (TikTok).</p>
 </body>
 </html>
